@@ -1,0 +1,126 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+    background-size: cover;
+    background-color: #70707c;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.input-group input[type="text"],
+.input-group input[type="number"],
+.input-group input[type="file"] {
+    width: calc(100% - 10px);
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    transition: border-color 0.2s ease-in-out;
+}
+
+.input-group input[type="text"]:focus,
+.input-group input[type="number"]:focus,
+.input-group input[type="file"]:focus {
+    border-color: #007bff;
+}
+
+.input-group .error {
+    color: red;
+    font-size: 14px;
+}
+
+.button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.saved-contacts-container {
+    margin-top: 30px; /* Space between form and saved contacts */
+}
+
+.saved-contact-card {
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.saved-contact-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px; /* Space below image */
+    border: 3px solid #007bff;
+}
+
+.saved-contact-card .contact-details {
+    text-align: center;
+}
+
+.saved-contact-card .contact-details strong {
+    font-size: 18px;
+    color: #007bff;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.saved-contact-card .contact-details span {
+    font-size: 14px;
+    color: #333;
+    display: block;
+}
+
+.saved-contact-card .button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.saved-contact-card .button:hover {
+    background-color: #c82333;
+}
